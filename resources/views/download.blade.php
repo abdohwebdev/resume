@@ -9,7 +9,7 @@
     @vite(['resources/css/app.css'])
 </head>
 <body>
-    <div class="py-9 px-7 max-w-2xl mx-auto my-2 border-1">
+    <div class="py-9 px-7 max-w-2xl mx-auto my-2">
         <header class="flex  justify-between items-start mb-12">
             <div>
                 <h1 class="font-bold text-2xl">{{$cv['name']}}</h1>
@@ -117,9 +117,6 @@
                 </section>
             @endif
         </main>
-    </div>
-    <div class="flex justify-center mt-6">
-        <a class="bg-blue-500 text-white px-4 py-2 rounded-md mb-5" href="{{route('download')}}">Download CV</a>
     </div>
 </body>
 </html>
