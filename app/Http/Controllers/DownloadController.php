@@ -9,7 +9,7 @@ class DownloadController extends Controller
 {
     public function __invoke()
     {
-        $cv = Cache::remember('cv', 3600, function () {
+        $cv = Cache::remember('cv', 604800, function () {
             return json_decode(Storage::disk('local')->get('cv.json'), true);
         });
 

@@ -10,7 +10,7 @@ class cvController extends Controller
     public function index()
     {
         // Attempt to retrieve the CV from cache
-        $cv = Cache::remember('cv', 3600, function () {
+        $cv = Cache::remember('cv', 604800, function () {
             return json_decode(Storage::disk('local')->get('cv.json'), true);
         });
         return view('cv', ['cv' => $cv]);
