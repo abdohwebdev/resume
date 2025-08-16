@@ -56,3 +56,6 @@ php artisan test
 ```
 ## Deployment Guide
 For detailed deployment instructions, please refer to the [deployment.md](deployment.md) file.
+
+## Screenshots
+![Resume Viewer Screenshot](resources/screenshots/cv-screenshot.png)
